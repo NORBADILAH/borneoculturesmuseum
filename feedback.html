@@ -1,0 +1,173 @@
+<html>
+<head>
+   
+    <title>Borneo Cultures Museum</title>
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+.button {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+</style>
+</head>
+<body>
+
+    <header>
+        <div class="index-text">
+            <h1>Borneo Cultures Museum</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="vision.html">Vission & Mission</a>
+                    <a href="aim.html">Aims</a>
+                    <a href="function.html">Functions</a>
+                    <a href="fees.html">Admission Fees</a>
+                    <a href="message.html">Message</a>
+                </div>
+                </div>
+            <a href="gallery.html">Gallery</a>
+            <div class="dropdown">
+                <a href="service.html">Services</a>
+                <div class="dropdown-content">
+                    <a href="recep.html">Reception</a>
+                    <a href="edu.html">Educational Programs</a>
+                    <a href="online.html">Online Services</a>
+                    <a href="member.html">Membership</a>
+                </div>
+                </div>
+            
+            <a href="exhibition.html">Exhibition</a>
+
+            <div class="dropdown">
+            <a href="contact.html">Contact</a>
+            <div class="dropdown-content">
+                <a href="feedback.html">Feedback</a></div>
+            </div>
+        </nav>
+     </header>
+
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>We Value Your Feedback</h1>
+            <p>Help us improve our services by sharing your experience</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <form class="feedback-form" action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label>How would you rate your experience? <span class="required">*</span></label>
+                <div class="rating">
+                    <input type="radio" id="rating1" name="rating" value="1" required>
+                    <label for="rating1">1 - Poor</label>
+
+                    <input type="radio" id="rating2" name="rating" value="2">
+                    <label for="rating2">2 - Fair</label>
+
+                    <input type="radio" id="rating3" name="rating" value="3">
+                    <label for="rating3">3 - Good</label>
+
+                    <input type="radio" id="rating4" name="rating" value="4">
+                    <label for="rating4">4 - Very Good</label>
+
+                    <input type="radio" id="rating5" name="rating" value="5">
+                    <label for="rating5">5 - Excellent</label>
+                </div>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="category">Category <span class="required">*</span></label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="service">Customer Service</option>
+                    <option value="product">Product Quality</option>
+                    <option value="website">Website Experience</option>
+                    <option value="delivery">Delivery Service</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="comments">Your Feedback <span class="required">*</span></label>
+                <textarea id="comments" name="comments" placeholder="Please share your experience with us..." required></textarea>
+            </div>
+
+            
+            <button type="submit" class="button">Submit Feedback</button>
+        </form>
+    </main>
+    <br>
+    
+
+<footer>
+    <p>Jalan Tun Abang Haji Openg, 93400 Kuching, Sarawak. </p>
+    <p>&copy; 2025 Borneo Cultures Museum. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+</body>
+</html>
