@@ -1,0 +1,271 @@
+<html>
+<head>
+    <title>Museum Ticket Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <header>
+        <div class="index-text">
+            <h1>Borneo Cultures Museum</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="vision.html">Vission & Mission</a>
+                    <a href="aim.html">Aims</a>
+                    <a href="function.html">Functions</a>
+                    <a href="fees.html">Admission Fees</a>
+                    <a href="message.html">Message</a>
+                </div>
+                </div>
+            <a href="gallery.html">Gallery</a>
+            <div class="dropdown">
+                <a href="service.html">Services</a>
+                <div class="dropdown-content">
+                    <a href="recep.html">Reception</a>
+                    <a href="edu.html">Educational Programs</a>
+                    <a href="online.html">Online Services</a>
+                    <a href="member.html">Membership</a>
+                </div>
+                </div>
+            
+            <a href="exhibition.html">Exhibition</a>
+
+            <div class="dropdown">
+            <a href="contact.html">Contact</a>
+
+        </nav>
+     </header>
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        
+
+        .form-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1500px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .form-header {
+            background: #f9fafc;
+            color: rgb(20, 20, 20);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .form-header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .form-content {
+            padding: 30px;
+        }
+
+        .section-title {
+            color: #050505;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e1e1;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #4a90e2;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .interest-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .interest-item input[type="checkbox"] {
+            width: auto;
+        }
+
+        .submit-btn {
+            background: #4a90e2;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #357abd;
+        }
+
+        .form-footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #eee;
+        }
+
+        .required {
+            color: #e74c3c;
+            margin-left: 3px;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .form-content {
+                padding: 20px;
+            }
+
+            .interests-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+        }
+    </style>
+    </head>
+    
+        <div class="form-container">
+            <div class="form-header">
+                <h1>Join Our Community </h1>
+                <p>Become a part of something amazing</p>
+            </div>
+    
+            <form class="form-content">
+                <h2 class="section-title">Personal Information</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>First Name<span class="required">*</span></label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name<span class="required">*</span></label>
+                        <input type="text" required>
+                    </div>
+                </div>
+    
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Email Address<span class="required">*</span></label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel">
+                    </div>
+                </div>
+    
+                <h2 class="section-title">Profile Details</h2>
+                <div class="form-group">
+                    <label>Occupation<span class="required">*</span></label>
+                    <select required>
+                        <option value="">Select your occupation</option>
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                        <option value="entrepreneur">Entrepreneur</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label>Areas of Interest</label>
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <input type="checkbox" id="tech">
+                            <label for="tech">Technology</label>
+                        </div>
+                        <div class="interest-item">
+                            <input type="checkbox" id="art">
+                            <label for="art">Art & Design</label>
+                        </div>
+                        <div class="interest-item">
+                            <input type="checkbox" id="business">
+                            <label for="business">Business</label>
+                        </div>
+                        <div class="interest-item">
+                            <input type="checkbox" id="science">
+                            <label for="science">Science</label>
+                        </div>
+                        <div class="interest-item">
+                            <input type="checkbox" id="music">
+                            <label for="music">Music</label>
+                        </div>
+                        <div class="interest-item">
+                            <input type="checkbox" id="sports">
+                            <label for="sports">Sports</label>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label>Tell us about yourself<span class="required">*</span></label>
+                    <textarea placeholder="Share your story, goals, and what you hope to achieve by joining our community" required></textarea>
+                </div>
+    
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+        <footer>
+            <p>Jalan Tun Abang Haji Openg, 93400 Kuching, Sarawak. </p>
+            <p>&copy; 2025 Borneo Cultures Museum. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+        </footer>
+    </body>
+    </html>
+
+
